@@ -87,7 +87,7 @@ module ZhConv
   
   def self.converter_url(variant, web_converter=false)
     if web_converter
-      "http://zh.wikipedia.org/w/index.php?title=MediaWiki:Conversiontable/#{variant}&action=raw&templates=expand"
+      "https://zh.wikipedia.org/w/index.php?title=MediaWiki:Conversiontable/#{variant}&action=raw&templates=expand"
     else
       File.expand_path(File.dirname(__FILE__)) + "/../data/#{variant}.txt"
     end
